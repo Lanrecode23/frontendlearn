@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="review.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="rating-container">
+        <div class="thanksImg">
+            <img src="./image/illustration-thank-you.svg" alt="">
+        </div>
+    <div id="thanksMessage"></div>
+    <div class="thanksId">
+    <h3>Thank you!</h3>
+    <p>We appreciate you taking the time to give a rating.</p>
+    <p>If you ever need any support, don't hesistate to</p>
+    <p>get in touch!</p>
+</div>
+</div>
+</body>
+<script>
+    const thanksMessage = document.getElementById("thanksMessage");
+    let message = localStorage.getItem('rating');
+    thanksMessage.innerText = `You selected ${message} out of 5 `;
+</script>
+</html>
